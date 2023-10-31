@@ -1,0 +1,380 @@
+:root {
+    --headercolor: #008bcc;
+    --politiccolor: #f1f1f1;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: 550;
+}
+
+
+header {
+    background-color: var(--headercolor);
+    height: 70px;
+}
+
+.container {
+    display: flex;
+    width: 1100px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container .headerright .navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .headerright .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container .headerright {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.container .headerright .searchlogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+.container .headerright .searchlogo .search {
+    background-color: rgba(0, 0, 0, .2);
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.container .headerright .searchlogo .lang {
+    background-color: rgba(0, 0, 0, .2);
+    width: 100%;
+    padding: 3px;
+    cursor: pointer;
+    color: white;
+
+
+}
+
+
+
+
+
+.container .headerright .navbar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.container .headerright .navbar i {
+    font-size: 25px;
+    display: none;
+}
+
+/* main css starting */
+
+
+main #politics {
+    background-color: var(--politiccolor);
+    margin: 0 auto;
+    width: 1100px;
+    margin-top: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+main #politics .politic {
+    background-color: var(--headercolor);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-family: sans-serif;
+    color: #f1f1f1;
+
+
+}
+
+
+main #politics .empty {
+    background-color: var(--headercolor);
+    width: 6px;
+    height: 100%;
+}
+
+
+
+#box .mainbox {
+    background-color: #d7d7d7;
+    width: 350px;
+    height: 350px;
+    cursor: pointer;
+}
+
+#box .mainbox .imgbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+
+#box .mainbox .imgbox {
+    height: 200px;
+    overflow: hidden;
+
+}
+
+#box .mainbox .centerbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    background-color: rgb(141 141 141);
+    height: 30px;
+    align-items: center;
+
+}
+
+
+
+#box .mainbox .centerbox .centerboxright {
+    color: rgb(4, 28, 247);
+}
+
+
+#box .mainbox .textbox {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 30px auto;
+    gap: 20px;
+}
+
+.mainbox:hover img {
+    transform: scale(1.1);
+
+}
+
+.mainbox:hover p {
+    color: #008bcc;
+
+}
+
+#last {
+    background-color: rgb(37, 37, 37);
+    height: 150px;
+    color: white;
+}
+
+.sectionlast {
+    width: 1100px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.imglastbox {
+    margin-top: 20px;
+    height: 50px;
+}
+
+.imglastbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.sectionlastbox {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-right: 1px solid #00000053;
+    padding-right: 30px;
+}
+
+.sectionlastbox i {
+    font-size: 28px;
+}
+
+.sectionlastbox span {
+    font-family: sans-serif;
+}
+
+.iconslastleft {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.sectionright {
+    border: none;
+}
+
+.footerbox {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #f1f1f1;
+
+}
+
+footer {
+    background-color: #333;
+}
+
+.boxabout {
+    display: flex;
+    gap: 20px;
+}
+
+.boxabout span {
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive design */
+
+
+@media only screen and (max-width:1100px) {
+    .container {
+        width: 100%;
+    }
+
+    .container .headerright .navbar ul {
+        position: absolute;
+        left: -100%;
+        flex-direction: column;
+        height: 100%;
+        background-color: chocolate;
+        width: 250px;
+        top: 0;
+        justify-content: space-around;
+    }
+
+    .container .headerright .navbar i {
+        display: block;
+    }
+
+    main #politics {
+        width: 100%;
+    }
+
+    main #box {
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .footerbox {
+        width: 100%;
+    }
+
+    .sectionlast {
+        width: 100%;
+    }
+
+    #last {
+        height: fit-content;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width:500px)  {
+    .logo img {
+        height: 35px;
+    }
+
+    header .container {
+        height: 70px;
+        padding: 0px 5px;
+    }
+
+    .lang span {
+        font-size: 12px;
+
+
+    }
+
+    main #box .mainbox {
+        width: 100%;
+
+    }
+    .sectionlast {
+        justify-content: center;
+    }
+
+    .sectionlastbox {
+        width: 100%;
+        border-bottom: 1px solid #00000053;
+        padding-right: 0px; }
+
+        .footerbox {
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            height: fit-content;
+        }
+}
